@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最美的你</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("http://a1.qpic.cn/psb?/V13L2DI73MZNnP/nGgGKmbuy7dI5BPy5CsPlYcZH07dJNPnCtE0zIsxcHU!/b/dJB79MJ0FwAA&bo=IAMVAgAAAAABBxQ!&rf=viewer_4") no-repeat;
+            background-size:cover;
+            overflow: hidden;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            margin-left:-100px;
+            transform-style: preserve-3d;
+            /*transform: rotateX(-10deg);*/
+            animation: sport 6s linear 0s infinite normal;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: black;
+        }
+        ul li:nth-child(1){
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid skyblue;
+            box-sizing: border-box;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li img{
+            opacity: 0.5;
+        }
+        ul li:hover img{
+            opacity: 1;
+        }
+        @keyframes sport {
+            from{
+                /*
+                注意点:
+                1.动画中如果有和默认样式中同名的属性, 会覆盖默认样式中同名的属性
+                2.在编写动画的时候, 固定不变的值写在前面, 需要变化的值写在后面
+                */
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+        .heart{
+            width: 173px;
+            height: 157px;
+            position: absolute;
+            left: 100px;
+            bottom: 100px;
+            animation: move 10s linear 0s infinite normal;
+        }
+        @keyframes move {
+            0%{
+                left: 100px;
+                bottom: 100px;
+                opacity: 1;
+            }
+            20%{
+                left: 300px;
+                bottom: 300px;
+                opacity: 0;
+            }
+            40%{
+                left: 500px;
+                bottom: 500px;
+                opacity: 1;
+            }
+            60%{
+                left: 800px;
+                bottom: 300px;
+                opacity: 0;
+            }
+            80%{
+                left: 1200px;
+                bottom: 100px;
+                opacity: 1;
+            }
+            100%{
+                left: 800px;
+                bottom: -200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="http://a3.qpic.cn/psb?/V13L2DI73MZNnP/XP1P1**OK.l8CpjlqthsZAOOchYZRkzh3HxLv0uGqrY!/b/dLxCJ8QaFAAA&bo=FQIgAwAAAAABABM!&rf=viewer_4" alt=""></li>
+    <li><img src="http://a2.qpic.cn/psb?/V13L2DI73MZNnP/g*NWSz*QS5ajWav.WlaFobD5EmHhy*THrFRP2mWToj0!/b/dEMckMNbEgAA&bo=FQIgAwAAAAABABM!&rf=viewer_4" alt=""></li>
+    <li><img src="http://b327.photo.store.qq.com/psb?/V13L2DI73MZNnP/Vs.nwer0BNbheYqujokF4WNk66AiC1ZXAgC8ZgsD0gQ!/b/dKri6cKHFwAA&bo=FQIgAwAAAAABABM!&rf=viewer_4" alt=""></li>
+    <li><img src="http://b328.photo.store.qq.com/psb?/V13L2DI73MZNnP/K.QdgEPjY4.nHMoNeufO4AkzEk9siWowRV7QHD303nU!/b/dOoFhMNiEgAA&bo=FQIgAwAAAAABABM!&rf=viewer_4" alt=""></li>
+    <li><img src="http://b328.photo.store.qq.com/psb?/V13L2DI73MZNnP/LQzcr4sFg9PoTq983Mfl3OPkYox4brCKBO338wfgHNM!/b/dEuHi8NcEgAA&bo=FQIgAwAAAAABABM!&rf=viewer_4" alt=""></li>
+    <li><img src="http://b329.photo.store.qq.com/psb?/V13L2DI73MZNnP/BlGkvXkJKOGt2YnfpwCjs6P0brHYdl43v09Vitj9mLc!/b/dDG7JcQdFAAA&bo=IAMVAgAAAAABABM!&rf=viewer_4" alt=""></li>
+</ul>
+<img src="http://a1.qpic.cn/psb?/V13L2DI72jo3Pw/jZ0lfQVv*D.ZTd*iwyc2Ri7HDupxfvoNhG7QgKzKRwk!/b/dG4BAAAAAAAA&bo=rQCdAAAAAAADBxI!&rf=viewer_4" class="heart">
+<audio src="https://pan.baidu.com/s/1hrJR80W" autoplay="autoplay" loop="loop"></audio>
+</body>
+</html>
